@@ -88,7 +88,7 @@ num_fir_1 = signal.firwin(L1, cutoff=500, window='hamming', pass_zero='lowpass',
 
 #Filtro 2: Frecuencia de corte 500Hz, ventana Hann y Orden 1001
 L2 = 1001 #Orden del filtro
-num_fir_2 = signal.firwin(L2, cutoff=500, window='blackman', pass_zero='highpass', fs=fs)
+num_fir_2 = signal.firwin(L2, cutoff=500, window='hann', pass_zero='highpass', fs=fs)
 
 #Filtro 3: Frecuencia de corte 500Hz, ventana Blackman y Orden 1001
 L3 = 1001 #Orden del filtro
